@@ -11,12 +11,20 @@ public class Scene_3_Dialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+       public Text Char3name;
+       public Text Char3speech;
+       public Text Char4name;
+       public Text Char4speech;	   
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar2;
+       public GameObject ArtChar1b;
+	   public GameObject ArtChar1c;
+       public GameObject ArtChar2a;
+	   public GameObject ArtChar2b;
+	   public GameObject ArtChar2c;
+	   public GameObject ArtChar3a;
+	   public GameObject ArtChar3b;
+	   public GameObject ArtChar3c;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -30,6 +38,8 @@ public class Scene_3_Dialogue : MonoBehaviour {
 void Start(){  
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+		ArtChar2a.SetActive(false);
+		ArtChar3a.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -58,44 +68,129 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
+                Char2speech.text = "Wakey wakey, human1.";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
+                Char1speech.text = "Wuh..? What happened?2";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
-        }
+                Char2speech.text = "I know I did not hit you that hard.3";
+ 				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
+       }
        else if (primeInt == 5){
                 Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
+                Char1speech.text = "Hit me? Why?4";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
         }
        else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.5";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
         }
        else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
+                Char1speech.text = "Why do you think I know anything?6";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
         }
        else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
+                Char2speech.text = "I know I did not hit you that hard.7";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
+        }
+       else if (primeInt == 9){
+                Char1name.text = "YOU";
+                Char1speech.text = "Hit me? Why?8";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
+        }
+       else if (primeInt == 10){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jeda";
+                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.9";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
+        }
+       else if (primeInt ==11){
+                Char1name.text = "YOU";
+                Char1speech.text = "Why do you think I know anything?10";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
+        }
+       else if (primeInt == 12){
+                Char1name.text = "YOU";
+                Char1speech.text = "Hit me? Why?11";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
+        }
+       else if (primeInt == 13){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jeda";
+                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.12";
+				Char3name.text = "";
+				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
+        }
+		
+       else if (primeInt == 14){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jeda";
+                Char2speech.text = "Do not play the stupid. You will take me to him.13";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
