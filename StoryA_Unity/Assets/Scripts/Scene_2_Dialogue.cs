@@ -11,12 +11,15 @@ public class Scene_2_Dialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+       public Text Char3name;
+       public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar2;
+       public GameObject ArtChar1b;
+       public GameObject ArtChar1c;
+	   public GameObject ArtChar2a;
+       public GameObject ArtChar2b;
+       public GameObject ArtChar2c;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -30,6 +33,11 @@ public class Scene_2_Dialogue : MonoBehaviour {
 void Start(){  
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar2a.SetActive(false);
+		ArtChar2b.SetActive(false);
+		ArtChar2c.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -91,7 +99,32 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 8){
+		else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jeda";
+                Char2speech.text = "I know I did not hit you that hard.";
+        }
+       else if (primeInt == 9){
+                Char1name.text = "YOU";
+                Char1speech.text = "Hit me? Why?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 10){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jeda";
+                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+        }
+       else if (primeInt ==11){
+                Char1name.text = "YOU";
+                Char1speech.text = "Why do you think I know anything?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		
+       else if (primeInt == 12){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
