@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 1111444596}
   - component: {fileID: 1111444595}
   m_Layer: 5
-  m_Name: Image_CHAR_Detective_Neutral
+  m_Name: Image_CHAR_Roomate_Neutral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
