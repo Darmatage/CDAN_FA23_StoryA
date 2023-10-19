@@ -570,8 +570,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 57}
-  m_SizeDelta: {x: 600, y: 150}
+  m_AnchoredPosition: {x: -6.8053, y: 67.302505}
+  m_SizeDelta: {x: 708.8846, y: 279.3008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &577853335
 MonoBehaviour:
@@ -595,18 +595,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You have found your sister before it was too late!
+  m_Text: "You found your sister \nbefore it was too late!"
 --- !u!222 &577853336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -818,7 +818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 219}
+  m_AnchoredPosition: {x: 0, y: 276}
   m_SizeDelta: {x: 800, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1026098372
@@ -844,7 +844,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 80
-    m_FontStyle: 1
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 80
@@ -871,6 +871,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 17029261}
     m_Modifications:
+    - target: {fileID: 1911622794205604147, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 660447629}
+    - target: {fileID: 1911622794205604147, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 2551820012474081462, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
       propertyPath: m_Name
       value: PAUSE_MENU
@@ -878,6 +886,26 @@ PrefabInstance:
     - target: {fileID: 2551820012474081462, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387485874655213412, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387485874655213412, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 660447629}
+    - target: {fileID: 5387485874655213412, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387485874655213412, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387485874655213412, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5625193325702935153, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
       propertyPath: m_Pivot.x
@@ -974,6 +1002,22 @@ PrefabInstance:
     - target: {fileID: 6785842040594341938, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
       propertyPath: m_AnchorMin.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487539868247270484, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 660447629}
+    - target: {fileID: 7487539868247270484, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504007906092091132, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 660447629}
+    - target: {fileID: 7504007906092091132, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
       objectReference: {fileID: 0}
     - target: {fileID: 8252050815086069522, guid: 212816a070b7d8043841da64b5b5a10b, type: 3}
       propertyPath: m_AnchorMax.x
