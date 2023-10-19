@@ -36,7 +36,9 @@ public class Scene_4_Dialogue : MonoBehaviour
     //public AudioSource audioSource;
     private bool allowSpace = true;
     private bool Sister_Location = false;
-    private bool 
+    private bool Talked_To_RA = false;
+    private bool Talked_To_Boyfriend = false;
+    private bool Talked_To_Roommate = false;
 
     // initial visibility settings. Any new images or buttons need to also be SetActive(false);
     void Start()
