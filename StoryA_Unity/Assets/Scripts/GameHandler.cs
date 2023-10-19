@@ -6,18 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
-	public static bool hasClue1 = false; //hair strands found in alley
-	public static bool hasClue2 = false; 
+//clue variables
+	public static bool hasClue1 = false; //met PI, scene 2
+	public static bool hasClue2 = false; //met detective, scene 3
 	public static bool hasClue3 = false; 
 	public static bool hasClue4 = false; 
 	public static bool hasClue5 = false; 
 	public static bool hasClue6 = false; 
+	public static bool hasClue7 = false; 
+	public static bool hasClue8 = false;
 
+	
+	// public GameObject textGameObject;
 
-        public static int playerStat1;
-        // public GameObject textGameObject;
+	void Start () { 
+	   //UpdateScore (); 
 
-        // void Start () { UpdateScore (); }
+	}
 
         void Update(){         //delete this quit functionality when a Pause Menu is added!
                 if (Input.GetKey("escape")){
@@ -53,4 +58,5 @@ public class GameHandler : MonoBehaviour{
                 Application.Quit();
                 #endif
         }
+			
 }

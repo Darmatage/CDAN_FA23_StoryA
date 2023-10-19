@@ -135,7 +135,22 @@ public void Next(){
 				Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 10){
+		else if (primeInt == 10){
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
+				
+				//update Crimeboard
+				GameHandler.hasClue1 = true;
+				GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
+				//open crimebaord
+				GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().CrimeBoardMenuToggle();
+        }
+		
+       else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "PI";
@@ -144,7 +159,7 @@ public void Next(){
                 Char3speech.text = "";
         }
 		
-		else if (primeInt == 11){
+		else if (primeInt == 12){
                 Char1name.text = "YOU";
                 Char1speech.text = "Yeah, you think it’s enough?";
                 Char2name.text = "";
@@ -152,7 +167,7 @@ public void Next(){
 				Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==12){
+       else if (primeInt ==13){
 		   ArtChar2a.SetActive(false);
 		   ArtChar2c.SetActive(true);
                 Char1name.text = "";
@@ -163,7 +178,7 @@ public void Next(){
                 Char3speech.text = "";
         }
 		
-       else if (primeInt == 13){
+       else if (primeInt == 14){
 		   NameBlock.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
