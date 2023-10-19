@@ -25,6 +25,8 @@ public class Scene_4_Dialogue : MonoBehaviour
     public GameObject ArtChar4a; //BOYFRIEND
     public GameObject ArtChar5a; //RA
     public GameObject ArtBG1;
+    public GameObject ArtBG2; //Femal dorm
+    public GameObject ArtBG3; //Male living space
     public GameObject Choice1a;
     public GameObject Choice1b;
     public GameObject Choice1c;
@@ -34,6 +36,7 @@ public class Scene_4_Dialogue : MonoBehaviour
     //public AudioSource audioSource;
     private bool allowSpace = true;
     private bool Sister_Location = false;
+    private bool 
 
     // initial visibility settings. Any new images or buttons need to also be SetActive(false);
     void Start()
@@ -44,6 +47,8 @@ public class Scene_4_Dialogue : MonoBehaviour
         ArtChar4a.SetActive(false);
         ArtChar5a.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
+        ArtBG3.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
@@ -420,6 +425,9 @@ public class Scene_4_Dialogue : MonoBehaviour
         Choice1c.SetActive(false);
         nextButton.SetActive(true);
         ArtChar2a.SetActive(true);
+        ArtBG1.SetActive(false);
+        ArtBG2.SetActive(true);
+        ArtBG3.SetActive(false);
         NextScene1Button.SetActive(false);
         allowSpace = true;
     }
@@ -435,6 +443,9 @@ public class Scene_4_Dialogue : MonoBehaviour
             Choice1c.SetActive(false);
             nextButton.SetActive(true);
             ArtChar5a.SetActive(true);
+            ArtBG1.SetActive(false);
+            ArtBG2.SetActive(false);
+            ArtBG3.SetActive(true);
             NextScene1Button.SetActive(false);
             allowSpace = true;
     }
@@ -450,6 +461,9 @@ public class Scene_4_Dialogue : MonoBehaviour
         Choice1c.SetActive(false);
         ArtChar4a.SetActive(true);
         nextButton.SetActive(true);
+        ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
+        ArtBG3.SetActive(false);
         NextScene1Button.SetActive(false);
         allowSpace = true;
     }
