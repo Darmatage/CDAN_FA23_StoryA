@@ -522,6 +522,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &438723963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3652941478002784664, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+  m_PrefabInstance: {fileID: 476662546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &476662546
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 513197972}
+    m_Modifications:
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 513197973}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneChange3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene_3_Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652941478002784664, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_Name
+      value: Button_SceneChange3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_Text
+      value: Go back home
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -20.4516
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+--- !u!224 &476662547 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+  m_PrefabInstance: {fileID: 476662546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &513197968
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +764,7 @@ RectTransform:
   - {fileID: 1253933825}
   - {fileID: 1498796449}
   - {fileID: 1455537142}
+  - {fileID: 476662547}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -677,6 +809,7 @@ MonoBehaviour:
   Choice1b: {fileID: 903805408}
   NextScene1Button: {fileID: 1488177093}
   NextScene2Button: {fileID: 1089674287}
+  NextScene3Button: {fileID: 438723963}
   nextButton: {fileID: 2104224499}
 --- !u!1 &564566539
 GameObject:
@@ -1044,7 +1177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Text
-      value: SceneChange2
+      value: Look in her dorm
       objectReference: {fileID: 0}
     - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Pivot.x
@@ -1402,7 +1535,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Text
-      value: StoryChoice1b
+      value: Let the cops handle everything
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Pivot.x
@@ -1533,7 +1674,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Text
-      value: StoryChoice1a
+      value: Keep looking yourself for your sister
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Pivot.x
@@ -1934,7 +2083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Text
-      value: SceneChange1
+      value: Look in the park
       objectReference: {fileID: 0}
     - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Pivot.x
