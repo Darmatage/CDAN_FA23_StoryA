@@ -18,9 +18,8 @@ public class Scene_7_Dialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
-        public GameObject ArtChar2;
-    public GameObject ArtChar3;
-    public GameObject ArtBG1;
+       //public GameObject ArtChar2;
+        public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -33,8 +32,6 @@ public class Scene_7_Dialogue : MonoBehaviour {
 void Start(){
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
-        ArtChar2.SetActive(false);
-ArtChar3.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -61,17 +58,20 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "Narrator";
-                Char1speech.text = "The inside of the fallout shelter is dark and is barely lit by your flashlight";
+
+                NextScene2Button.SetActive(true);
+                Char1name.text = "The Dev";
+                Char1speech.text = "Oppsies, sowwy, game not finished yet come back later";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+                nextButton.SetActive(false);
         }
       //Choice
        else if (primeInt == 3){
-                Char1name.text = "Narrator";
-                Char1speech.text = "You won't be able to search this alone, who should you call:";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -82,200 +82,14 @@ public void Next(){
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
-        else if (primeInt == 20)//Pi start
-        {
-            ArtChar1a.SetActive(true);
-            ArtChar2.SetActive(true);
-            DialogueDisplay.SetActive(true);
-            Char1name.text = "Private Investigator";
-            Char1speech.text = "What's Up?";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 21)//Pi start
-        {
-            Char1name.text = "You";
-            Char1speech.text = "I found her";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 22)//Pi start
-        {
-            Char1name.text = "Private Investigator";
-            Char1speech.text = "You found her, where?";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 23)//Pi start
-        {
-            Char1name.text = "You";
-            Char1speech.text = "She's somewhere in this fallout shelter, it's right next to club DREAM, in the alleyway";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 24)//Pi start
-        {
-            Char1name.text = "You";
-            Char1speech.text = "I need your help searching this place though it's big, and dark";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 25)//Pi start
-        {
-            Char1name.text = "Private Investigator";
-            Char1speech.text = "Sure thing I'll be right over";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 26)//Pi start
-        {
-            ArtChar2.SetActive(false);
-            Char1name.text = "Narrator";
-            Char1speech.text = "Ten minutes pass before he arrives";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 27)//Pi start
-        {
-              ArtChar2.SetActive(true);
-            Char1name.text = "Private Investigator";
-            Char1speech.text = "Alright I'm here, let's go in";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 28)//Pi start
-        {
-            Char1name.text = "Narrator";
-            Char1speech.text = "Yatta yatta you get knocked out you get tied up next to your sister I will fix it in class today";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-            nextButton.SetActive(false);
-            allowSpace = false;
-        }
 
-        else if (primeInt == 30)//Cop Start
-        {
-            ArtChar1a.SetActive(true);
-            DialogueDisplay.SetActive(true);
-            ArtChar3.SetActive(true);
-            Char1name.text = "Detective";
-            Char1speech.text = "Hello?";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 31)//Pi start
-        {
-            Char1name.text = "You";
-            Char1speech.text = "I think I found my sister";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 32)//Pi start
-        {
-            Char1name.text = "Detective";
-            Char1speech.text = "You think you did, what did you find?";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 33)//Pi start
-        {
-            Char1name.text = "You";
-            Char1speech.text = "I found her shoe in a dumpster out side the club she was";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 34)//Pi start
-        {
-            Char1name.text = "You";
-            Char1speech.text = "And it was right in front of this abandoned fallout shelter";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 35)//Pi start
-        {
-            Char1name.text = "Detective";
-            Char1speech.text = "Alright, sit tight";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 36)//Pi start
-        {
-            Char1name.text = "Narrator";
-            ArtChar3.SetActive(false);
-            Char1speech.text = "In five minutes police cars roll up, some cops start cordoning off the area";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 37)//Pi start
-        {
-            ArtChar3.SetActive(true);
-            Char1name.text = "Detective";
-            Char1speech.text = "Ok, we'll send some guys in to check you stay here with me";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 38)//Pi start
-        {
-            Char1name.text = "Narrator";
-            Char1speech.text = "A few minutes of silence, then you hear some muffled shouting, before a gunshot echoes through the bunker";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-        }
-        else if (primeInt == 39)//Pi start
-        {
-            Char1name.text = "Narrator";
-            Char1speech.text = "The Cops saved the day by shooting people yipee";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-            nextButton.SetActive(false);
-            allowSpace = false;
-        }
-
-        //Please do NOT delete this final bracket that ends the Next() function:
-    }
+      //Please do NOT delete this final bracket that ends the Next() function:
+     }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "Narrator";
-                Char1speech.text = "You decide to call the private investigator";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -287,8 +101,8 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "Narrator";
-                Char1speech.text = "You decide to call the police detective";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -301,9 +115,9 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene_8");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene_8");
         }
 }

@@ -456,7 +456,7 @@ public class Scene_4_Dialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene_6");
     }
     public void SceneChange2()
     {

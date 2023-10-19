@@ -618,13 +618,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 513197972}
     m_Modifications:
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 513197973}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneChange2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene_7_Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3652941478002784664, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Name
       value: Button_SceneChange2
       objectReference: {fileID: 0}
     - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Text
-      value: SceneChange2
+      value: You Win!
       objectReference: {fileID: 0}
     - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Pivot.x
@@ -1387,13 +1403,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 513197972}
     m_Modifications:
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 513197973}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneChange1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene_7_Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080017156760934840, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3652941478002784664, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Name
       value: Button_SceneChange1
       objectReference: {fileID: 0}
     - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Text
-      value: SceneChange1
+      value: You Lose!
       objectReference: {fileID: 0}
     - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Pivot.x
