@@ -1785,7 +1785,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Text
-      value: SceneChange1
+      value: GO TO CLUB DREAM
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441599893692838836, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 6913277100020151046, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
       propertyPath: m_Pivot.x
