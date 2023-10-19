@@ -21,9 +21,9 @@ public class Scene_4_Dialogue : MonoBehaviour
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
     //public GameObject ArtChar1b;
-    public GameObject ArtChar2a;
-    public GameObject ArtChar4a;
-    public GameObject ArtChar5a;
+    public GameObject ArtChar2a; //ROOMMATE
+    public GameObject ArtChar4a; //BOYFRIEND
+    public GameObject ArtChar5a; //RA
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -33,6 +33,7 @@ public class Scene_4_Dialogue : MonoBehaviour
     public GameObject nextButton;
     //public AudioSource audioSource;
     private bool allowSpace = true;
+    private bool Sister_Location = false;
 
     // initial visibility settings. Any new images or buttons need to also be SetActive(false);
     void Start()
@@ -163,19 +164,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
 
         // after choice 1a
-        else if (primeInt == 20)
-        {
-            //gameHandler.AddPlayerStat(1);
-            NextScene1Button.SetActive(false);
-            ArtChar2a.SetActive(true);
-            Choice1b.SetActive(false); // function Choice1bFunct()
-            Choice1c.SetActive(false); // function Choice1cFunct()
-            nextButton.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "ROOMMATE";
-            Char2speech.text = "Oh hey, who are you?";
-        }
+
         else if (primeInt == 21)
         {
             //gameHandler.AddPlayerStat(1);
@@ -248,21 +237,12 @@ public class Scene_4_Dialogue : MonoBehaviour
             allowSpace = false;
             Choice1b.SetActive(true); // function Choice1bFunct()
             Choice1c.SetActive(true); // function Choice1cFunct()
+            if (Sister_Location == true) {
+              NextScene1Button.SetActive(true);
+            }
         }
         // after choice 1b
-        else if (primeInt == 30)
-        {
-            ArtChar5a.SetActive(true);
-            Choice1a.SetActive(false); // function Choice1bFunct()
-            Choice1c.SetActive(false); // function Choice1cFunct()
-            nextButton.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-            Char5name.text = "BOYFRIEND";
-            Char5speech.text = "What do you want?";
-        }
+
         else if (primeInt == 31)
         {
             Char1name.text = "YOU";
@@ -316,6 +296,7 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char3speech.text = "";
             Char5name.text = "BOYFRIEND";
             Char5speech.text = "A place called Dream, we go there every once in a while";
+            Sister_Location = true;
         }
         else if (primeInt == 37)
         {
@@ -354,26 +335,15 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char3speech.text = "";
             Char5name.text = "";
             Char5speech.text = "";
-            NextScene1Button.SetActive(true);
+
             Choice1a.SetActive(true); // function Choice1bFunct()
             Choice1c.SetActive(true); // function Choice1cFunct()
+            if (Sister_Location == true) {
+              NextScene1Button.SetActive(true);
+            }
             nextButton.SetActive(false);
         }
         // after choice 1c
-        else if (primeInt == 41)
-        {
-            NextScene1Button.SetActive(false);
-            ArtChar4a.SetActive(true);
-            Choice1a.SetActive(false); // function Choice1bFunct()
-            Choice1b.SetActive(false); // function Choice1cFunct()
-            nextButton.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-            Char4name.text = "RA";
-            Char4speech.text = "You must be SISTER'S NAME'S sibling, you must be really going through alot.";
-        }
         else if (primeInt == 42)
         {
             Char1name.text = "YOU";
@@ -432,6 +402,9 @@ public class Scene_4_Dialogue : MonoBehaviour
             nextButton.SetActive(false);
             Choice1a.SetActive(true); // function Choice1bFunct()
             Choice1b.SetActive(true); // function Choice1cFunct()
+            if (Sister_Location == true) {
+              NextScene1Button.SetActive(true);
+            }
         }
     }
 
@@ -441,11 +414,13 @@ public class Scene_4_Dialogue : MonoBehaviour
         Char1speech.text = "";
         Char2name.text = "ROOMMATE";
         Char2speech.text = "Oh hey, who are you?";
-        primeInt = 19;
+        primeInt = 20;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
         nextButton.SetActive(true);
+        ArtChar2a.SetActive(true);
+        NextScene1Button.SetActive(false);
         allowSpace = true;
     }
     public void Choice1bFunct()
@@ -454,11 +429,13 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char5name.text = "BOYFRIEND";
             Char5speech.text = "What do you want?";
-            primeInt = 29;
+            primeInt = 30;
             Choice1a.SetActive(false);
             Choice1b.SetActive(false);
             Choice1c.SetActive(false);
             nextButton.SetActive(true);
+            ArtChar5a.SetActive(true);
+            NextScene1Button.SetActive(false);
             allowSpace = true;
     }
     public void Choice1cFunct()
@@ -471,7 +448,9 @@ public class Scene_4_Dialogue : MonoBehaviour
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
+        ArtChar4a.SetActive(true);
         nextButton.SetActive(true);
+        NextScene1Button.SetActive(false);
         allowSpace = true;
     }
 
