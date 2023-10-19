@@ -39,6 +39,9 @@ public class Scene6Dialogue : MonoBehaviour
     {
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+        ArtChar2a.SetActive(false);
+        ArtChar3a.SetActive(false);
+        ArtChar4a.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -424,6 +427,7 @@ public class Scene6Dialogue : MonoBehaviour
         primeInt = 8;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        NextScene1Button.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -444,10 +448,10 @@ public class Scene6Dialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene_7");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene_7");
     }
 }

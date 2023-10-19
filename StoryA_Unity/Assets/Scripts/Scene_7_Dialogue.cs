@@ -33,6 +33,8 @@ public class Scene_7_Dialogue : MonoBehaviour {
 void Start(){
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+        ArtChar2.SetActive(false);
+ArtChar3.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -69,7 +71,7 @@ public void Next(){
       //Choice
        else if (primeInt == 3){
                 Char1name.text = "Narrator";
-                Char1speech.text = "You won’t be able to search this alone, who should you call:";
+                Char1speech.text = "You won't be able to search this alone, who should you call:";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -113,7 +115,7 @@ public void Next(){
         else if (primeInt == 23)//Pi start
         {
             Char1name.text = "You";
-            Char1speech.text = "She’s somewhere in this fallout shelter, it’s right next to club DREAM, in the alleyway";
+            Char1speech.text = "She's somewhere in this fallout shelter, it's right next to club DREAM, in the alleyway";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -122,7 +124,7 @@ public void Next(){
         else if (primeInt == 24)//Pi start
         {
             Char1name.text = "You";
-            Char1speech.text = "I need your help searching this place though it’s big, and dark";
+            Char1speech.text = "I need your help searching this place though it's big, and dark";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -131,7 +133,7 @@ public void Next(){
         else if (primeInt == 25)//Pi start
         {
             Char1name.text = "Private Investigator";
-            Char1speech.text = "Sure thing I’ll be right over";
+            Char1speech.text = "Sure thing I'll be right over";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -139,6 +141,7 @@ public void Next(){
         }
         else if (primeInt == 26)//Pi start
         {
+            ArtChar2.SetActive(false);
             Char1name.text = "Narrator";
             Char1speech.text = "Ten minutes pass before he arrives";
             Char2name.text = "";
@@ -148,8 +151,9 @@ public void Next(){
         }
         else if (primeInt == 27)//Pi start
         {
+              ArtChar2.SetActive(true);
             Char1name.text = "Private Investigator";
-            Char1speech.text = "Alright I’m here, let’s go in";
+            Char1speech.text = "Alright I'm here, let's go in";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -163,6 +167,8 @@ public void Next(){
             Char2speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
         }
 
         else if (primeInt == 30)//Cop Start
@@ -236,7 +242,7 @@ public void Next(){
         {
             ArtChar3.SetActive(true);
             Char1name.text = "Detective";
-            Char1speech.text = "Ok, we’ll send some guys in to check you stay here with me";
+            Char1speech.text = "Ok, we'll send some guys in to check you stay here with me";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -259,6 +265,8 @@ public void Next(){
             Char2speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
