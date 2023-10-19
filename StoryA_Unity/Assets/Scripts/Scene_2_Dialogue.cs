@@ -26,6 +26,7 @@ public class Scene_2_Dialogue : MonoBehaviour {
         public GameObject Choice1b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+		public GameObject NextScene3Button;
         public GameObject nextButton;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -44,6 +45,7 @@ void Start(){
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+		NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -112,7 +114,7 @@ public void Next(){
        else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
+                Char2name.text = "PI";
                 Char2speech.text = "Hopefully I can. So should I just start asking questions or do you have anything specific to share with me?";
 				Char3name.text = "";
                 Char3speech.text = "";
@@ -181,34 +183,59 @@ public void Next(){
             NameBlock.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "PI";
+                Char2speech.text = "Great, I won’t let you down.";
+				Char3name.text = "";
+                Char3speech.text = "";
+
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
+                NextScene1Button.SetActive(true); // go to bad end #1
         }
 
        // after choice 1b
        else if (primeInt == 30){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "PI";
+                Char2speech.text = "Sure, that’s fine. Just keep safe, and keep in touch too.";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
-       else if (primeInt == 31){
+		
+		else if (primeInt == 31){
+			NameBlock.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "The private investigator leaves you alone at the table, wondering where to look for your sister next.";
+        }
+		
+		
+		else if (primeInt == 32){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "You remember: She loved to spend time in the park, perhaps there’s some kind of clue there? Or maybe you should talk with her roommates in her college dorm?";
+        }
+		
+       else if (primeInt == 33){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "Time is running out. Where do you go?";
+				
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+                NextScene2Button.SetActive(true); //Look in the Park (Scene 5)
+				NextScene3Button.SetActive(true); //Talk to college dorm-mates (Scene 4)
+				
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -218,9 +245,11 @@ public void Next(){
         public void Choice1aFunct(){
 			NameBlock.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "";
+                Char1speech.text = "Yeah, I’ll let you handle it, I have classes to focus on anyways.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 19;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -230,9 +259,11 @@ public void Next(){
         public void Choice1bFunct(){
 			NameBlock.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "";
+                Char1speech.text = "That’s great but uhh, I’m gonna keep looking on my own too.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 29;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -241,9 +272,12 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("End_Lose1");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene_5");
+        }
+		public void SceneChange3(){
+                SceneManager.LoadScene("Scene_4");
         }
 }

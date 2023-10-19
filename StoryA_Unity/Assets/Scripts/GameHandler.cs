@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
+	public static bool hasClue1 = false; //hair strands found in alley
+	public static bool hasClue2 = false; 
+	public static bool hasClue3 = false; 
+	public static bool hasClue4 = false; 
+	public static bool hasClue5 = false; 
+	public static bool hasClue6 = false; 
+
+
         public static int playerStat1;
         // public GameObject textGameObject;
 
