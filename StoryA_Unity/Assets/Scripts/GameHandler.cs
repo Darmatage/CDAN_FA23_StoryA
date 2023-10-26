@@ -25,7 +25,9 @@ public class GameHandler : MonoBehaviour{
         public GameObject pauseMenuUI;
         public AudioMixer mixer;
         public static float volumeLevel = 1.0f;
-        private Slider sliderVolumeCtrl;	
+        private Slider sliderVolumeCtrl;
+        
+        public Texture2D cursorArrow;
 	
 	
 	// public GameObject textGameObject;
@@ -42,7 +44,8 @@ public class GameHandler : MonoBehaviour{
         void Start(){
                 pauseMenuUI.SetActive(false);
                 GameisPaused = false;
-        }
+                Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
+    }
 
         void Update(){
                 if (Input.GetKeyDown(KeyCode.Escape)){
