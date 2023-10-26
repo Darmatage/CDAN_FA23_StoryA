@@ -465,8 +465,8 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 54)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Do you know anything else?";
+            Char1name.text = "RA";
+            Char1speech.text = "Were you two close?";
             Char3name.text = "";
             Char3speech.text = "";
             Char4name.text = "";
@@ -478,10 +478,45 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
-            Char4name.text = "RA";
-            Char4speech.text = "No that's all I know, I wish I could do more to help you.";
+            Char4name.text = "";
+            Char4speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            RAChoice1.SetActive(true);
+            RAChoice2.SetActive(true);
         }
-        else if (primeInt == 56)
+        else if (primeInt == 57)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "RA";
+            Char3speech.text = "Well when she’s found maybe you two can reconnect.";
+            Char4name.text = "";
+            Char4speech.text = "";
+        }
+        else if (primeInt == 58)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "You";
+            Char3speech.text = " Do you know anything else?";
+            Char4name.text = "";
+            Char4speech.text = "";
+        }
+        else if (primeInt == 59)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "RA";
+            Char3speech.text = "No that’s all I know, I wish I could do more to help you.";
+            Char4name.text = "";
+            Char4speech.text = "";
+            Talked_To_RA = true;
+        }
+        else if (primeInt == 60)
         {
             ArtChar4a.SetActive(false);
             Char1name.text = "";
@@ -491,7 +526,71 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char4name.text = "";
             Char4speech.text = "";
         }
-        else if (primeInt == 57)
+        else if (primeInt == 61)
+        {
+            ArtChar4a.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+            nextButton.SetActive(false);
+            if (Talked_To_Boyfriend == false)
+            {
+                Choice1b.SetActive(true); // function Choice1bFunct()
+            }
+            if (Talked_To_Roommate == false)
+            {
+                Choice1a.SetActive(true); // function Choice1cFunct()
+            }
+            if (Sister_Location == true)
+            {
+                NextScene1Button.SetActive(true);
+            }
+        }
+        else if (primeInt == 63)
+        {
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "RA";
+            Char3speech.text = "Oh then this must be really hurting you.";
+            Char4name.text = "";
+            Char4speech.text = "";
+        }
+        else if (primeInt == 64)
+        {
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "You";
+            Char3speech.text = " Do you know anything else?";
+            Char4name.text = "";
+            Char4speech.text = "";
+        }
+        else if (primeInt == 65)
+        {
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "RA";
+            Char3speech.text = "No that’s all I know, I wish I could do more to help you.";
+            Char4name.text = "";
+            Char4speech.text = "";
+            Talked_To_RA = true;
+        }
+        else if (primeInt == 66)
+        {
+            ArtChar4a.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char3name.text = "NARRATOR";
+            Char3speech.text = "Now what to do?";
+            Char4name.text = "";
+            Char4speech.text = "";
+        }
+        else if (primeInt == 67)
         {
             ArtChar4a.SetActive(false);
             Char1name.text = "";
@@ -606,6 +705,26 @@ public class Scene_4_Dialogue : MonoBehaviour
         Char1name.text = "You";
         Char1speech.text = "No, I'm not saying that";
         primeInt = 91;
+        RoomateChoice1.SetActive(false);
+        RoomateChoice2.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void RAChoice1Funct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "We drifter apart after she left for college";
+        primeInt = 56;
+        RoomateChoice1.SetActive(false);
+        RoomateChoice2.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void RAChoice2Funct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "We were inseperable";
+        primeInt = 62;
         RoomateChoice1.SetActive(false);
         RoomateChoice2.SetActive(false);
         nextButton.SetActive(true);
