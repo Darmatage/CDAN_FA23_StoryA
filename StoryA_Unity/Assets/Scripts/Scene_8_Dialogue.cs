@@ -82,7 +82,7 @@ public void Next(){
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
-        else if (primeInt == 20)//Pi start
+        else if (primeInt == 19)//Pi start
         {
             ArtChar1a.SetActive(true);
             ArtChar2.SetActive(true);
@@ -94,7 +94,7 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 21)//Pi start
+        else if (primeInt == 20)//Pi start
         {
             Char1name.text = "You";
             Char1speech.text = "I found her";
@@ -103,7 +103,7 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 22)//Pi start
+        else if (primeInt == 21)//Pi start
         {
             Char1name.text = "Private Investigator";
             Char1speech.text = "You found her, where?";
@@ -112,7 +112,7 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 23)//Pi start
+        else if (primeInt == 22)//Pi start
         {
             Char1name.text = "You";
             Char1speech.text = "She's somewhere in this fallout shelter, it's right next to club DREAM, in the alleyway";
@@ -121,7 +121,7 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 24)//Pi start
+        else if (primeInt == 23)//Pi start
         {
             Char1name.text = "You";
             Char1speech.text = "I need your help searching this place though it's big, and dark";
@@ -130,7 +130,7 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 25)//Pi start
+        else if (primeInt == 24)//Pi start
         {
             Char1name.text = "Private Investigator";
             Char1speech.text = "Sure thing I'll be right over";
@@ -139,7 +139,7 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 26)//Pi start
+        else if (primeInt == 25)//Pi start
         {
             ArtChar2.SetActive(false);
             Char1name.text = "Narrator";
@@ -149,7 +149,7 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 27)//Pi start
+        else if (primeInt == 26)//Pi start
         {
               ArtChar2.SetActive(true);
             Char1name.text = "Private Investigator";
@@ -159,17 +159,9 @@ public void Next(){
             Char3name.text = "";
             Char3speech.text = "";
         }
-        else if (primeInt == 28)//Pi start
+        else if (primeInt == 27)//Pi start
         {
-            Char1name.text = "Narrator";
-            Char1speech.text = "Yatta yatta you get knocked out you get tied up next to your sister I will fix it in class today";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene1Button.SetActive(true);
+            SceneManager.LoadScene("End_Lose3");
         }
 
         else if (primeInt == 30)//Cop Start
@@ -261,14 +253,15 @@ public void Next(){
         else if (primeInt == 39)//Pi start
         {
             Char1name.text = "Narrator";
-            Char1speech.text = "The Cops saved the day by shooting people yipee";
+            Char1speech.text = "The police walk out of the bunker with a figure shivering in their arms";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene2Button.SetActive(true);
+        }
+        else if (primeInt == 40)//Pi start
+        {
+            SceneManager.LoadScene("End_Win");
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
@@ -282,7 +275,7 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
-                primeInt = 19;
+                primeInt = 18;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
