@@ -609,7 +609,6 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 67)
         {
-            ArtChar4a.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char3name.text = "";
@@ -712,8 +711,8 @@ public class Scene_4_Dialogue : MonoBehaviour
         Char1name.text = "You";
         Char1speech.text = "Yeah, I think it could be you";
         primeInt = 40;
-        RoomateChoice1.SetActive(false);
-        RoomateChoice2.SetActive(false);
+        BoyfriendChoice1.SetActive(false);
+        BoyfriendChoice2.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -722,8 +721,8 @@ public class Scene_4_Dialogue : MonoBehaviour
         Char1name.text = "You";
         Char1speech.text = "No, I'm not saying that";
         primeInt = 91;
-        RoomateChoice1.SetActive(false);
-        RoomateChoice2.SetActive(false);
+        BoyfriendChoice1.SetActive(false);
+        BoyfriendChoice2.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -732,8 +731,8 @@ public class Scene_4_Dialogue : MonoBehaviour
         Char1name.text = "You";
         Char1speech.text = "We drifter apart after she left for college";
         primeInt = 56;
-        RoomateChoice1.SetActive(false);
-        RoomateChoice2.SetActive(false);
+        RAChoice1.SetActive(false);
+        RAChoice2.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -742,8 +741,8 @@ public class Scene_4_Dialogue : MonoBehaviour
         Char1name.text = "You";
         Char1speech.text = "We were inseperable";
         primeInt = 62;
-        RoomateChoice1.SetActive(false);
-        RoomateChoice2.SetActive(false);
+        RAChoice1.SetActive(false);
+        RAChoice2.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
