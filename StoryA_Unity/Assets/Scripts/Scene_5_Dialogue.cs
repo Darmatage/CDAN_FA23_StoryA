@@ -147,7 +147,11 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "NARRATOR";
-                Char2speech.text = "Finally a neon sign catches your eye, reading: CLUB DREAM";	
+                Char2speech.text = "Finally a neon sign catches your eye, reading: CLUB DREAM";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue4 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }		
 		
        else if (primeInt == 36){

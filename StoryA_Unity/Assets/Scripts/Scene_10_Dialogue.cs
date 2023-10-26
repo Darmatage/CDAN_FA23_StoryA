@@ -58,6 +58,15 @@ public void Next(){
             DialogueDisplay.SetActive(true);
             Char1name.text = "Narrator";
             Char1speech.text = "The alley is dimly lit, filled with trash and back doors.";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue3 = true;
+            GameHandler.hasClue4 = true;
+            GameHandler.hasClue5 = true;
+            GameHandler.hasClue6 = true;
+            GameHandler.hasClue7 = true;
+            GameHandler.hasClue8 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 3)
         {
@@ -77,12 +86,12 @@ public void Next(){
         else if (primeInt == 21)
         {
             Char1name.text = "Narrator";
-            Char1speech.text = "Well, hopefully no one’s watching while you do this.";
+            Char1speech.text = "Well, hopefully no one?s watching while you do this.";
         }
         else if (primeInt == 22)
         {
             Char1name.text = "Narrator";
-            Char1speech.text = "Flipping open the lid you’re hit with the stench of week old garbage.";
+            Char1speech.text = "Flipping open the lid you?re hit with the stench of week old garbage.";
         }
         else if (primeInt == 23)
         {
@@ -102,7 +111,7 @@ public void Next(){
         else if (primeInt == 26)
         {
             Char1name.text = "Narrator";
-            Char1speech.text = "Not- wait, what’s that red sparkle.";
+            Char1speech.text = "Not- wait, what?s that red sparkle.";
         }
         else if (primeInt == 27)
         {
@@ -117,7 +126,7 @@ public void Next(){
         else if (primeInt == 29)
         {
             Char1name.text = "Narrator";
-            Char1speech.text = "Surely, your sister was here, but now where could she be…";
+            Char1speech.text = "Surely, your sister was here, but now where could she be?";
         }
         else if (primeInt == 30)
         {
@@ -147,7 +156,7 @@ public void Next(){
         else if (primeInt == 44)
         {
             Char1name.text = "Narrator";
-            Char1speech.text = "Almost like there's something there…";
+            Char1speech.text = "Almost like there's something there?";
         }
         else if (primeInt == 45)
         {

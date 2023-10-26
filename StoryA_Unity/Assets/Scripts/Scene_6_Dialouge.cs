@@ -110,6 +110,11 @@ public class Scene6Dialogue : MonoBehaviour
             Char3speech.text = "Hey kid, whadda want?";
             Char4name.text = "";
             Char4speech.text = "";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue4 = true;
+            GameHandler.hasClue7 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 5)
         {
@@ -265,6 +270,12 @@ public class Scene6Dialogue : MonoBehaviour
             Char2speech.text = "";
             Char4name.text = "MANAGER";
             Char4speech.text = "How the hell did you get in here?";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue4 = true;
+            GameHandler.hasClue7 = true;
+            GameHandler.hasClue8 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 16)
         {

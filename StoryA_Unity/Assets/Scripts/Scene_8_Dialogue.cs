@@ -67,6 +67,15 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue3 = true;
+            GameHandler.hasClue4 = true;
+            GameHandler.hasClue5 = true;
+            GameHandler.hasClue6 = true;
+            GameHandler.hasClue7 = true;
+            GameHandler.hasClue8 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
       //Choice
        else if (primeInt == 3){

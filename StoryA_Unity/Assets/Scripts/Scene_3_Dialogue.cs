@@ -135,8 +135,10 @@ public void Next(){
 				Char3speech.text = "";
 				Char4name.text = "";
 				Char4speech.text = "";
+                GameHandler.hasClue2 = true;
+                GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
-       else if (primeInt == 8){
+        else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";

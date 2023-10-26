@@ -187,7 +187,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         else if (primeInt == 20)
         {
             //gameHandler.AddPlayerStat(1);
-            Char1name.text = "Roommate";
+            Char1name.text = "YOU";
             Char1speech.text = "I’m blaise’s sister";
             Char2name.text = "";
             Char2speech.text = "";
@@ -199,6 +199,10 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "ROOMMATE";
             Char2speech.text = "Oh my gosh! I’m so sorry that this has happened to you, you must be going through a lot.";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue6 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 22)
         {
@@ -291,6 +295,10 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char3speech.text = "";
             Char5name.text = "BOYFRIEND";
             Char5speech.text = "Look, I don't know anything ok, I didn't do it.";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue3 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 33)
         {
@@ -328,6 +336,11 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char5name.text = "BOYFRIEND";
             Char5speech.text = "A place called Dream, we go there every once in a while";
             Sister_Location = true;
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue3 = true;
+            GameHandler.hasClue4 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 37)
         {
@@ -462,6 +475,10 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char3speech.text = "";
             Char4name.text = "RA";
             Char4speech.text = "No, I just know she was out with friends and then never came back, I submitted the missing persons to the police when her roommate said she never showed up again";
+            GameHandler.hasClue1 = true;
+            GameHandler.hasClue2 = true;
+            GameHandler.hasClue5 = true;
+            GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 54)
         {
