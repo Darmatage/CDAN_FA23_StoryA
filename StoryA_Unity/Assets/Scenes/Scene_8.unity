@@ -196,6 +196,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &176494139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 24521934073885519, guid: 95068a31b8e9343c58a4e2cf76b355fa, type: 3}
+  m_PrefabInstance: {fileID: 1785224162002748036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &245174807
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +522,7 @@ MonoBehaviour:
   Char2speech: {fileID: 1673381152}
   Char3name: {fileID: 624765035}
   Char3speech: {fileID: 1655822667}
+  NameBlock: {fileID: 176494139}
   DialogueDisplay: {fileID: 362844184}
   ArtChar1a: {fileID: 1271215802}
   ArtChar2: {fileID: 974034848}
