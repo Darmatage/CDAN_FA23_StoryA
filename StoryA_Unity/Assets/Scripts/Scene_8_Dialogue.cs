@@ -13,9 +13,10 @@ public class Scene_8_Dialogue : MonoBehaviour {
         public Text Char2speech;
         public Text Char3name;
         public Text Char3speech;
-       //public Text Char3name;
-       //public Text Char3speech;
-        public GameObject DialogueDisplay;
+    public GameObject NameBlock;
+    //public Text Char3name;
+    //public Text Char3speech;
+    public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
         public GameObject ArtChar2;
@@ -59,7 +60,8 @@ public void Next(){
         }
         //Basic Text
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+            NameBlock.SetActive(false);
+            ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Narrator";
                 Char1speech.text = "The inside of the fallout shelter is dark and is barely lit by your flashlight";
@@ -79,7 +81,8 @@ public void Next(){
         }
       //Choice
        else if (primeInt == 3){
-                Char1name.text = "Narrator";
+            NameBlock.SetActive(false);
+            Char1name.text = "Narrator";
                 Char1speech.text = "You won't be able to search this alone, who should you call:";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -93,6 +96,7 @@ public void Next(){
         }
         else if (primeInt == 19)//Pi start
         {
+            NameBlock.SetActive(true);
             ArtChar1a.SetActive(true);
             ArtChar2.SetActive(true);
             DialogueDisplay.SetActive(true);
@@ -151,6 +155,7 @@ public void Next(){
         else if (primeInt == 25)//Pi start
         {
             ArtChar2.SetActive(false);
+            NameBlock.SetActive(false);
             Char1name.text = "Narrator";
             Char1speech.text = "Ten minutes pass before he arrives";
             Char2name.text = "";
@@ -161,6 +166,7 @@ public void Next(){
         else if (primeInt == 26)//Pi start
         {
               ArtChar2.SetActive(true);
+            NameBlock.SetActive(true);
             Char1name.text = "Private Investigator";
             Char1speech.text = "Alright I'm here, let's go in";
             Char2name.text = "";
@@ -175,6 +181,7 @@ public void Next(){
 
         else if (primeInt == 30)//Cop Start
         {
+            NameBlock.SetActive(true);
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             ArtChar3.SetActive(true);
@@ -206,7 +213,7 @@ public void Next(){
         else if (primeInt == 33)//Pi start
         {
             Char1name.text = "You";
-            Char1speech.text = "I found her shoe in a dumpster out side the club she was";
+            Char1speech.text = "In the alley behind the club she was in";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -215,7 +222,7 @@ public void Next(){
         else if (primeInt == 34)//Pi start
         {
             Char1name.text = "You";
-            Char1speech.text = "And it was right in front of this abandoned fallout shelter";
+            Char1speech.text = "There's this hidden abandoned fallout shelter behind a dumpster";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -232,6 +239,7 @@ public void Next(){
         }
         else if (primeInt == 36)//Pi start
         {
+            NameBlock.SetActive(false);
             Char1name.text = "Narrator";
             ArtChar3.SetActive(false);
             Char1speech.text = "In five minutes police cars roll up, some cops start cordoning off the area";
@@ -242,6 +250,7 @@ public void Next(){
         }
         else if (primeInt == 37)//Pi start
         {
+            NameBlock.SetActive(true);
             ArtChar3.SetActive(true);
             Char1name.text = "Detective";
             Char1speech.text = "Ok, we'll send some guys in to check you stay here with me";
@@ -252,6 +261,7 @@ public void Next(){
         }
         else if (primeInt == 38)//Pi start
         {
+            NameBlock.SetActive(false);
             Char1name.text = "Narrator";
             Char1speech.text = "A few minutes of silence, then you hear some muffled shouting, before a gunshot echoes through the bunker";
             Char2name.text = "";
@@ -278,7 +288,8 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "Narrator";
+        NameBlock.SetActive(false);
+        Char1name.text = "Narrator";
                 Char1speech.text = "You decide to call the private investigator";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -291,7 +302,8 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "Narrator";
+        NameBlock.SetActive(false);
+        Char1name.text = "Narrator";
                 Char1speech.text = "You decide to call the police detective";
                 Char2name.text = "";
                 Char2speech.text = "";

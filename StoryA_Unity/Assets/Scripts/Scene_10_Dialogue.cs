@@ -9,9 +9,10 @@ public class Scene_10_Dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
-       //public Text Char3name;
-       //public Text Char3speech;
-        public GameObject DialogueDisplay;
+    //public Text Char3name;
+    //public Text Char3speech;
+    public GameObject NameBlock;
+    public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
        //public GameObject ArtChar2;
@@ -34,7 +35,8 @@ void Start(){
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-   }
+        NameBlock.SetActive(true);
+    }
 
 void Update(){         // use spacebar as Next button
         if (allowSpace == true){
@@ -54,6 +56,7 @@ public void Next(){
         //Basic Text
         else if (primeInt == 2)
         {
+            NameBlock.SetActive(false);
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "Narrator";

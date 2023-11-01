@@ -10,8 +10,9 @@ public class Scene_5_Dialogue : MonoBehaviour {
         public Text Char1name;
         public Text Char1speech;
         public Text Char2name;
-        public Text Char2speech;	   
-        public GameObject DialogueDisplay;
+        public Text Char2speech;
+    public GameObject NameBlock;
+    public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
         public GameObject ArtChar1b;
 	    public GameObject ArtChar1c;
@@ -53,7 +54,8 @@ public void Next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+            NameBlock.SetActive(false);
+            ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -62,7 +64,8 @@ public void Next(){
 				
         }
        else if (primeInt ==3){
-				Char1name.text = "YOU";
+            NameBlock.SetActive(true);
+            Char1name.text = "YOU";
                 Char1speech.text = "She always loved the park, it reminded her of the woods she liked to wander back home.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -97,7 +100,8 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 20){
-                Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
 				Char2name.text = "NARRATOR";
                 Char2speech.text = "You decide to look in her dorm.";
@@ -109,7 +113,8 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
-                Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "NARRATOR";
                 Char2speech.text = "You think over what you know…";
@@ -130,21 +135,24 @@ public void Next(){
         }
 		
 		else if (primeInt == 33){
-                Char1name.text = "YOU";
+            NameBlock.SetActive(true);
+            Char1name.text = "YOU";
                 Char1speech.text = "I can't seem to find any clues in the park. Maybe she went to someplace near the park?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }		
 		
 		else if (primeInt == 34){
-                Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "NARRATOR";
                 Char2speech.text = "You begin to walk the periphery of the park, looking for any place you think your sister would go.";
 		}
 		
 		else if (primeInt == 35){
-                Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "NARRATOR";
                 Char2speech.text = "Finally a neon sign catches your eye, reading: CLUB DREAM";
@@ -155,7 +163,8 @@ public void Next(){
         }		
 		
        else if (primeInt == 36){
-                Char1name.text = "YOU";
+            NameBlock.SetActive(true);
+            Char1name.text = "YOU";
                 Char1speech.text = "I know she used to go clubbing all the time. It won't hurt to check quick.";
 				Char2name.text = "";
                 Char2speech.text = "";	
@@ -169,7 +178,8 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "YOU";
+        NameBlock.SetActive(true);
+        Char1name.text = "YOU";
                 Char1speech.text = "Maybe i'll check out her dorm room since its right here.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -180,7 +190,8 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "";
+        NameBlock.SetActive(false);
+        Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "NARRATOR";
                 Char2speech.text = "You decide to try and retrace your sister’s steps.";

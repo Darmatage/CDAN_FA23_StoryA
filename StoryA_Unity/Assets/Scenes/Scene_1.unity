@@ -987,6 +987,7 @@ MonoBehaviour:
   Char2speech: {fileID: 1839958434}
   Char3name: {fileID: 1785224162002748039}
   Char3speech: {fileID: 1785224162002748038}
+  NameBlock: {fileID: 1699303334}
   DialogueDisplay: {fileID: 1919974227}
   ArtChar1a: {fileID: 1271215802}
   ArtChar2: {fileID: 1637921246}
@@ -2080,6 +2081,11 @@ RectTransform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3652941478002784664, guid: 218a676c61bf3414a96e3ab631e5ffd6, type: 3}
   m_PrefabInstance: {fileID: 1524212400283441550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1699303334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 24521934073885519, guid: 95068a31b8e9343c58a4e2cf76b355fa, type: 3}
+  m_PrefabInstance: {fileID: 1785224162002748036}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1752209937 stripped
 GameObject:

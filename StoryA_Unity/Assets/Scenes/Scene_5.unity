@@ -505,6 +505,7 @@ MonoBehaviour:
   Char1speech: {fileID: 1785224162002748041}
   Char2name: {fileID: 1785224162002748040}
   Char2speech: {fileID: 1785224162002748039}
+  NameBlock: {fileID: 673422965}
   DialogueDisplay: {fileID: 1785224162002748038}
   ArtChar1a: {fileID: 1271215802}
   ArtChar1b: {fileID: 1149538131}
@@ -515,6 +516,11 @@ MonoBehaviour:
   NextScene1Button: {fileID: 1524212400283441551}
   NextScene2Button: {fileID: 1253933824}
   nextButton: {fileID: 8963734950114602387}
+--- !u!1 &673422965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 24521934073885519, guid: 95068a31b8e9343c58a4e2cf76b355fa, type: 3}
+  m_PrefabInstance: {fileID: 1785224162002748036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1149538131
 GameObject:
   m_ObjectHideFlags: 0

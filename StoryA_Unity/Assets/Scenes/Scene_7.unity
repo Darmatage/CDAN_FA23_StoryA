@@ -400,6 +400,7 @@ MonoBehaviour:
   primeInt: 1
   Char1name: {fileID: 1785224162002748043}
   Char1speech: {fileID: 1785224162002748042}
+  NameBlock: {fileID: 1785224162002748038}
   DialogueDisplay: {fileID: 416121332}
   ArtChar1a: {fileID: 1271215802}
   ArtBG1: {fileID: 245174807}
@@ -1589,6 +1590,11 @@ PrefabInstance:
 --- !u!224 &1785224162002748037 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1891836917373214472, guid: 95068a31b8e9343c58a4e2cf76b355fa, type: 3}
+  m_PrefabInstance: {fileID: 1785224162002748036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1785224162002748038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 24521934073885519, guid: 95068a31b8e9343c58a4e2cf76b355fa, type: 3}
   m_PrefabInstance: {fileID: 1785224162002748036}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1785224162002748042 stripped

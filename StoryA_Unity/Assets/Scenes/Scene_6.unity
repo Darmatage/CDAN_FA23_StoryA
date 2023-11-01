@@ -569,11 +569,12 @@ MonoBehaviour:
   Char3speech: {fileID: 1785224162002748038}
   Char4name: {fileID: 1784968021}
   Char4speech: {fileID: 101420452}
+  NameBlock: {fileID: 2122001608}
   DialogueDisplay: {fileID: 233537932}
   ArtChar1a: {fileID: 1271215802}
   ArtChar2a: {fileID: 1111444593}
   ArtChar3a: {fileID: 1111444593}
-  ArtChar4a: {fileID: 0}
+  ArtChar4a: {fileID: 405475113}
   ArtBG1: {fileID: 245174807}
   Choice1a: {fileID: 1498796448}
   Choice1b: {fileID: 1455537141}
@@ -1675,6 +1676,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d3f336f5923498fa082d40de3904cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2122001608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 24521934073885519, guid: 95068a31b8e9343c58a4e2cf76b355fa, type: 3}
+  m_PrefabInstance: {fileID: 1785224162002748036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1524212400283441550
 PrefabInstance:
   m_ObjectHideFlags: 0
