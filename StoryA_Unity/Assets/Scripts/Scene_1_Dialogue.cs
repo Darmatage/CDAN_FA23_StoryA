@@ -13,9 +13,10 @@ public class Scene_1_Dialogue : MonoBehaviour {
         public Text Char2speech;
         public Text Char3name;
         public Text Char3speech;
-       //public Text Char3name;
-       //public Text Char3speech;
-        public GameObject DialogueDisplay;
+    public GameObject NameBlock;
+    //public Text Char3name;
+    //public Text Char3speech;
+    public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
         public GameObject ArtChar2; //detective
@@ -70,7 +71,8 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Narrator";
                 Char2speech.text = "It's been a week since anybody last saw your sister";
@@ -78,7 +80,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
-                Char1name.text = "";
+               
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Narrator";
                 Char2speech.text = "Last you heard she was seen out with some friends and never got back home.";
@@ -165,7 +168,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt == 21){
-                Char1name.text = "";
+            NameBlock.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Detective";
                 Char2speech.text = "Hello?";
@@ -238,7 +242,8 @@ public void Next(){
                         Char3speech.text = "";
                 }
          else if (primeInt == 30){
-                  Char1name.text = "Narrator";
+            NameBlock.SetActive(false);
+            Char1name.text = "Narrator";
                   Char1speech.text = "The detective hangs up, you could go down to the station like he asked, or you could try and find your sister on your own.";
                   Char2name.text = "";
                   Char2speech.text = "";
@@ -261,7 +266,8 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 42){
-                 Char1name.text = "";
+            NameBlock.SetActive(true);
+            Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Deacon";
                  Char2speech.text = "Oh hey, thanks for calling back. I had a few things I wanted to talk to you about.";
@@ -298,7 +304,8 @@ public void Next(){
                 Choice1e.SetActive(true);
         }
         else if (primeInt == 51){
-                 Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Narrator";
                  Char2speech.text = "You know your sister liked to spend time in the park, so you could see if there’s any info you could find there.";
@@ -355,7 +362,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Narrator";
-                Char2speech.text = "You deicde to call the private investigator back.";
+                Char2speech.text = "You decide to call the private investigator back.";
                 Char3name.text = "";
                 Char3speech.text = "";
                 primeInt = 40;
@@ -389,7 +396,8 @@ public void Next(){
                 NextScene1Button.SetActive(true);
         }
         public void Choice1eFunct(){
-                Char1name.text = "";
+        NameBlock.SetActive(false);
+        Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Narrator";
                 Char2speech.text = "There's not many places where you could look";

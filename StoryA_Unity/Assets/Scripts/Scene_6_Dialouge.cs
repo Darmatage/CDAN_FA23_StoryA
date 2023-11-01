@@ -16,6 +16,7 @@ public class Scene6Dialogue : MonoBehaviour
     public Text Char3speech;
     public Text Char4name;
     public Text Char4speech;
+    public GameObject NameBlock;
     //public Text Char3name;
     //public Text Char3speech;
     public GameObject DialogueDisplay;
@@ -68,10 +69,15 @@ public class Scene6Dialogue : MonoBehaviour
         if (primeInt == 1)
         {
             // AudioSource.Play();
+            Choice1a.SetActive(false);
+            Choice1b.SetActive(false);
+            NextScene1Button.SetActive(false);
+            NextScene2Button.SetActive(false);
         }
         //Basic Text
         else if (primeInt == 2)
         {
+            NameBlock.SetActive(false);
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             nextButton.SetActive(true);
@@ -99,6 +105,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
+            NameBlock.SetActive(true);
             ArtChar1a.SetActive(true);
             ArtChar2a.SetActive(true);
             DialogueDisplay.SetActive(true);
@@ -161,6 +168,7 @@ public class Scene6Dialogue : MonoBehaviour
         // after choice 1a
         else if (primeInt == 8)
         {
+            NameBlock.SetActive(false);
             //gameHandler.AddPlayerStat(1);
             NextScene1Button.SetActive(false);
             nextButton.SetActive(true);
@@ -175,6 +183,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 9)
         {
+            NameBlock.SetActive(true);
             //gameHandler.AddPlayerStat(1);
             NextScene1Button.SetActive(false);
             nextButton.SetActive(true);
@@ -189,6 +198,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 10)
         {
+            NameBlock.SetActive(false);
             //gameHandler.AddPlayerStat(1);
             NextScene1Button.SetActive(false);
             nextButton.SetActive(true);
@@ -203,6 +213,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 11)
         {
+            NameBlock.SetActive(true);
             //gameHandler.AddPlayerStat(1);
             NextScene1Button.SetActive(false);
             nextButton.SetActive(true);
@@ -235,6 +246,7 @@ public class Scene6Dialogue : MonoBehaviour
         // after choice 1b
         else if (primeInt == 13)
         {
+            NameBlock.SetActive(false);
             //gameHandler.AddPlayerStat(1);
             ArtChar4a.SetActive(true);
             NextScene1Button.SetActive(false);
@@ -260,6 +272,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 15)
         {
+            NameBlock.SetActive(true);
             //gameHandler.AddPlayerStat(1);
             ArtChar4a.SetActive(true);
             NextScene1Button.SetActive(false);
@@ -323,7 +336,7 @@ public class Scene6Dialogue : MonoBehaviour
             Char2name.text = "";
             Char2speech.text = "";
             Char4name.text = "MANAGER";
-            Char4speech.text = "So, she was probably picked up off the stret going home.";
+            Char4speech.text = "So, she was probably picked up off the street going home.";
         }
         else if (primeInt == 20)
         {
@@ -399,6 +412,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 26)
         {
+            NameBlock.SetActive(false);
             //gameHandler.AddPlayerStat(1);
             NextScene1Button.SetActive(false);
             nextButton.SetActive(true);
@@ -429,6 +443,7 @@ public class Scene6Dialogue : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
+        NameBlock.SetActive(false);
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "NARRATOR";
@@ -444,6 +459,7 @@ public class Scene6Dialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
+        NameBlock.SetActive(false);
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "NARRATOR";

@@ -19,6 +19,7 @@ public class Scene_4_Dialogue : MonoBehaviour
     public Text Char5name;
     public Text Char5speech;
     public GameObject DialogueDisplay;
+    public GameObject NameBlock;
     public GameObject ArtChar1a;
     //public GameObject ArtChar1b;
     public GameObject ArtChar2a; //ROOMMATE
@@ -69,6 +70,10 @@ public class Scene_4_Dialogue : MonoBehaviour
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+        Talked_To_Boyfriend = false;
+        Talked_To_RA = false;
+        Talked_To_Roommate = false;
+        Sister_Location = false;
     }
 
     void Update()
@@ -92,6 +97,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
+            NameBlock.SetActive(false);
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             nextButton.SetActive(true);
@@ -248,6 +254,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 28)
         {
+            NameBlock.SetActive(false);
             ArtChar2a.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
@@ -358,7 +365,7 @@ public class Scene_4_Dialogue : MonoBehaviour
             Char3name.text = "";
             Char3speech.text = "";
             Char5name.text = "BOYFRIEND";
-            Char5speech.text = "what, do you think i did it?";
+            Char5speech.text = "What, do you think I did it?";
         }
         else if (primeInt == 39)
         {
@@ -386,6 +393,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 42)
         {
+            NameBlock.SetActive(false);
             ArtChar5a.SetActive(false);
             Char1name.text = "Narrator";
             Char1speech.text = "He storms off.";
@@ -428,6 +436,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 94)
         {
+            NameBlock.SetActive(false);
             ArtChar5a.SetActive(false);
             Char1name.text = "Narrator";
             Char1speech.text = "He storms off.";
@@ -535,6 +544,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 60)
         {
+            NameBlock.SetActive(false);
             ArtChar4a.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
@@ -599,6 +609,7 @@ public class Scene_4_Dialogue : MonoBehaviour
         }
         else if (primeInt == 66)
         {
+            NameBlock.SetActive(false);
             ArtChar4a.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
@@ -633,6 +644,7 @@ public class Scene_4_Dialogue : MonoBehaviour
 
     private void Choice1aFunct()
     {
+        NameBlock.SetActive(true);
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "ROOMMATE";
@@ -651,7 +663,8 @@ public class Scene_4_Dialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
-            Char1name.text = "";
+        NameBlock.SetActive(true);
+        Char1name.text = "";
             Char1speech.text = "";
             Char5name.text = "BOYFRIEND";
             Char5speech.text = "What do you want?";
@@ -669,6 +682,7 @@ public class Scene_4_Dialogue : MonoBehaviour
     }
     public void Choice1cFunct()
     {
+        NameBlock.SetActive(true);
         Char1name.text = "";
         Char1speech.text = "";
         Char4name.text = "RA";
@@ -729,7 +743,7 @@ public class Scene_4_Dialogue : MonoBehaviour
     public void RAChoice1Funct()
     {
         Char1name.text = "You";
-        Char1speech.text = "We drifter apart after she left for college";
+        Char1speech.text = "We drifted apart after she left for college";
         primeInt = 56;
         RAChoice1.SetActive(false);
         RAChoice2.SetActive(false);

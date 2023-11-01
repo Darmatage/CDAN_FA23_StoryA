@@ -14,8 +14,9 @@ public class Scene_3_Dialogue : MonoBehaviour {
         public Text Char3name;
         public Text Char3speech;
         public Text Char4name;
-        public Text Char4speech;	   
-        public GameObject DialogueDisplay;
+        public Text Char4speech;
+    public GameObject NameBlock;
+    public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
         public GameObject ArtChar1b;
 	    public GameObject ArtChar1c;
@@ -71,7 +72,8 @@ public void Next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+            NameBlock.SetActive(false);
+            ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -83,7 +85,8 @@ public void Next(){
 				Char4speech.text = "You arrive at the police station, the lobby is currently empty except for a bored looking receptionist behind the front desk";
         }
        else if (primeInt ==3){
-                ArtChar3a.SetActive(true);
+            NameBlock.SetActive(true);
+            ArtChar3a.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -116,7 +119,8 @@ public void Next(){
         }
        else if (primeInt == 6){
                 ArtChar3a.SetActive(false);
-				Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -127,10 +131,11 @@ public void Next(){
         }
        else if (primeInt ==7){
                 ArtChar2a.SetActive(true);
-				Char1name.text = "";
+            NameBlock.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "DETECTIVE";
-                Char2speech.text = "Hello PLAYER NAME, thanks for coming by, I just need to ask you a few questions in my office";
+                Char2speech.text = "Hello Blaise, thanks for coming by, I just need to ask you a few questions in my office";
 				Char3name.text = "";
 				Char3speech.text = "";
 				Char4name.text = "";
@@ -139,7 +144,8 @@ public void Next(){
                 GameObject.FindWithTag("PhoneHandler").GetComponent<PhoneHandler>().UpdateCrimeBoard();
         }
         else if (primeInt == 8){
-                Char1name.text = "";
+            NameBlock.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -149,7 +155,8 @@ public void Next(){
 				Char4speech.text = "Over the course of an hour the detective picks your brain for anything you know about your sister that could possibly help the investigation, likes, dislikes, habits, etc, etc. Afterwards he leads you back into the lobby";
         }
        else if (primeInt == 9){
-                Char1name.text = "";
+            NameBlock.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -214,14 +221,16 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 20){
-                //gameHandler.AddPlayerStat(1);
-                Char1name.text = "YOU";
+            NameBlock.SetActive(false);
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "YOU";
                 Char1speech.text = "If the cops really were that competent, they would have found her by now.";
 				Char4name.text = "";
                 Char4speech.text = "";
         }
        else if (primeInt == 21){
-                Char1name.text = "YOU";
+            NameBlock.SetActive(false);
+            Char1name.text = "YOU";
                 Char1speech.text = "The question is now, where to look?";
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -232,15 +241,17 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
-                Char1name.text = "YOU";
-                Char1speech.text = " It’s honestly better to let the cops handle this, I have classes to focus on anyways, and all this stress isn’t helping me.";
+            NameBlock.SetActive(false);
+            Char1name.text = "YOU";
+                Char1speech.text = " It’s honestly better to let the cops handle this, you have classes to focus on anyways, and all this stress isn’t helping me.";
                 Char4name.text = "";
                 Char4speech.text = "";
         }
 		
        else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "I'll head back home for now and collect my thoughts.";
+            NameBlock.SetActive(false);
+            Char1name.text = "YOU";
+                Char1speech.text = "You'll head back home for now and collect your thoughts.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene3Button.SetActive(true);
@@ -251,7 +262,8 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "";
+        NameBlock.SetActive(false);
+        Char1name.text = "";
                 Char1speech.text = "";
                 Char4name.text = "NARRATOR";
                 Char4speech.text = "You decide to look for her yourself.";
@@ -262,7 +274,8 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "";
+        NameBlock.SetActive(false);
+        Char1name.text = "";
                 Char1speech.text = "";
                 Char4name.text = "NARRATOR";
                 Char4speech.text = "You decide to let the police handle everything.";

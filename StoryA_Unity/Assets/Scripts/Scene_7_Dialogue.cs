@@ -13,9 +13,10 @@ public class Scene_7_Dialogue : MonoBehaviour {
         public Text Char2speech;
         public Text Char3name;
         public Text Char3speech;
-       //public Text Char3name;
-       //public Text Char3speech;
-        public GameObject DialogueDisplay;
+    //public Text Char3name;
+    //public Text Char3speech;
+     public GameObject NameBlock;
+    public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
        //public GameObject ArtChar2;
