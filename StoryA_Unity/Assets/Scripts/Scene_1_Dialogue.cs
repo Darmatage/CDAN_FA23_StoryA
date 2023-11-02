@@ -22,6 +22,7 @@ public class Scene_1_Dialogue : MonoBehaviour {
         public GameObject ArtChar2; //detective
         public GameObject ArtChar3; //PI
         public GameObject ArtBG1;
+        public GameObject ArtBG2; //split screen
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
@@ -42,6 +43,7 @@ void Start(){
         ArtChar2.SetActive(false);
         ArtChar3.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
@@ -168,6 +170,7 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt == 21){
+            ArtBG2.SetActive(true);
             NameBlock.SetActive(true);
             Char1name.text = "";
                 Char1speech.text = "";
@@ -242,6 +245,7 @@ public void Next(){
                         Char3speech.text = "";
                 }
          else if (primeInt == 30){
+            ArtBG2.SetActive(false);
             NameBlock.SetActive(false);
             Char1name.text = "Narrator";
                   Char1speech.text = "The detective hangs up, you could go down to the station like he asked, or you could try and find your sister on your own.";
