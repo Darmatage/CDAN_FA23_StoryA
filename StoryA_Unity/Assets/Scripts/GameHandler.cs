@@ -88,10 +88,18 @@ public class GameHandler : MonoBehaviour{
 
         public void RestartGame(){
 			Time.timeScale = 1f;
+            hasClue1 = false;
+            hasClue2 = false;
+            hasClue3 = false;
+            hasClue4 = false;
+            hasClue5 = false;
+            hasClue6 = false;
+            hasClue7 = false;
+            hasClue8 = false;
             SceneManager.LoadScene("MainMenu");
         }
 
-        public void QuitGame(){
+    public void QuitGame(){
                 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
                 #else
