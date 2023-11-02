@@ -1005,6 +1005,7 @@ MonoBehaviour:
   NextScene3Button: {fileID: 316859703}
   NextScene4Button: {fileID: 2033067147}
   nextButton: {fileID: 604507864}
+  openphone: {fileID: 1893610291}
 --- !u!1 &519757054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,6 +2187,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1893610291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8594591967432352326, guid: 52455953db138814a9f00eb88e18b8d3, type: 3}
+  m_PrefabInstance: {fileID: 167576383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1919974227 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2250796292823802854, guid: 95068a31b8e9343c58a4e2cf76b355fa, type: 3}

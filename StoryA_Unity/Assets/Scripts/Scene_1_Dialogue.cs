@@ -33,6 +33,7 @@ public class Scene_1_Dialogue : MonoBehaviour {
         public GameObject NextScene3Button; // Dorm
         public GameObject NextScene4Button; // Park
         public GameObject nextButton;
+        public GameObject openphone; 
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -54,6 +55,7 @@ void Start(){
         NextScene3Button.SetActive(false);
         NextScene4Button.SetActive(false);
         nextButton.SetActive(true);
+        openphone.SetActive(false); 
    }
 
 void Update(){         // use spacebar as Next button
@@ -106,6 +108,7 @@ public void Next(){
                 Char2speech.text = "You’ve decided to take this into your own hands and have been slowly organizing whatever clues you can find into a crime board on your phone.";
                 Char3name.text = "";
                 Char3speech.text = "";
+            openphone.SetActive(true);
         }
        else if (primeInt == 6){
                 Char1name.text = "";
